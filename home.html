@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Google Fonts for Elegant Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #2e7d32, #fbc02d); /* Dark Emerald Green and Gold Gradient */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            flex-direction: column; /* To make space for the bottom section */
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff; /* Solid white background for the container */
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); /* Adding soft shadow for depth */
+            width: 90%;
+            max-width: 650px;
+            transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+        }
+
+        .container:hover {
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+            transform: scale(1.02);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: #2e7d32; /* Deep Emerald Green */
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .btn {
+            background-color: #4a148c; /* Deep Purple */
+            color: #fff;
+            padding: 16px 40px;
+            margin: 12px;
+            border: none;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 30px;
+            width: 250px;
+            display: inline-block;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #9c27b0;
+            transform: scale(1.05);
+        }
+
+        .btn i {
+            margin-right: 12px;
+        }
+
+        .btn.fb-btn {
+            background-color: #3b5998; /* Facebook Blue */
+        }
+
+        .btn.fb-btn:hover {
+            background-color: #365899;
+        }
+
+        .btn.instagram-btn {
+            background-color: #e1306c; /* Instagram Pink */
+        }
+
+        .btn.instagram-btn:hover {
+            background-color: #c13584;
+        }
+
+        .btn.whatsapp-btn {
+            background-color: #25d366; /* WhatsApp Green */
+        }
+
+        .btn.whatsapp-btn:hover {
+            background-color: #128c7e;
+        }
+
+        .btn.call-btn {
+            background-color: #34b7f1; /* Light Blue */
+        }
+
+        .btn.call-btn:hover {
+            background-color: #007bff;
+        }
+
+        /* Highlight the "Review Us" Button with Heartbeat Animation */
+        .btn-review {
+            font-size: 24px;
+            font-weight: 700;
+            padding: 20px 50px;
+            background-color: #fbc02d; /* Gold */
+            color: #2e7d32; /* Deep Emerald Green */
+            border-radius: 50px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            animation: heartbeat 1.5s ease-in-out infinite; /* Heartbeat animation */
+        }
+
+        .btn-review:hover {
+            background-color: #ff9800;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Keyframes for the Heartbeat Animation */
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.1);
+            }
+            50% {
+                transform: scale(1);
+            }
+            75% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            .btn {
+                width: 100%;
+                font-size: 18px;
+                padding: 14px;
+            }
+
+            .btn-review {
+                width: 100%;
+                padding: 18px;
+            }
+
+            .container {
+                padding: 20px;
+                width: 90%;
+            }
+
+            body {
+                background: linear-gradient(45deg, #388e3c, #fbc02d); /* Adjusted gradient for mobile */
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How Can We Assist You?</h1>
+        
+        <!-- Review Us Button (Main Focus with Heartbeat Animation) -->
+        <button class="btn btn-review" onclick="window.location.href='https://prhairandmakeupstudio.github.io/reviews/'">
+            <i class="fas fa-star"></i> Review Us
+        </button>
+        
+        <br>
+        <!-- Secondary Buttons -->
+        <button class="btn call-btn" onclick="window.location.href='tel:+8707744651'">
+            <i class="fas fa-phone-alt"></i> Call Us
+        </button>
+        <br>
+        <button class="btn whatsapp-btn" onclick="window.location.href='https://wa.me/8707744651'">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </button>
+        <br>
+        <button class="btn instagram-btn" onclick="window.location.href='https://www.instagram.com/prhairandmakeupstudiosalempur/?igsh=c2kzOG82YXA1ZXBx#'">
+            <i class="fab fa-instagram"></i> Instagram
+        </button>
+        <br>
+        <button class="btn fb-btn" onclick="window.location.href='https://www.facebook.com/prhairandmakeupstudiosalempur?mibextid=ZbWKwL'">
+            <i class="fab fa-facebook"></i> Facebook
+        </button>
+    </div>
+</body>
+</html>
